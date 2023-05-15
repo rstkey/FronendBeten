@@ -1,0 +1,38 @@
+diff --git a/src/locales/ar.json b/src/locales/ar.json
+index 346c434..31fc459 100644
+--- a/src/locales/ar.json
++++ b/src/locales/ar.json
+@@ -480,5 +480,6 @@
+     "Hospitalities":"الاعاشه والضيافه",
+     "Vehicles":"خدمة النقل",
+     "Dormitories":"خدمة الاسكان",
+-    "Meals":"الوجبات"
++    "Meals":"الوجبات",
++    "Demo account credentials already filled.": "تم ملء بيانات اعتماد الحساب التجريبي بالفعل."
+ }
+diff --git a/src/views/panel/Auth/Login.vue b/src/views/panel/Auth/Login.vue
+index 7ef0e43..164b00e 100644
+--- a/src/views/panel/Auth/Login.vue
++++ b/src/views/panel/Auth/Login.vue
+@@ -9,7 +9,8 @@
+                 <CForm>
+                   <h1 class="text-center">{{ $t('Login') }}</h1>
+                   <p class="text-medium-emphasis text-center">
+-                    {{ $t('Sign in to your account') }}
++                    {{ $t('Sign in to your account') }}<br>
++                    {{ $t('Demo account credentials already filled.') }}
+                   </p>
+                   <CInputGroup class="mb-3">
+                     <CInputGroupText>@</CInputGroupText>
+@@ -69,7 +70,10 @@ export default {
+   name: 'Login',
+   data: () => ({
+     error_message: '',
+-    form: {},
++    form: {
++      email: 'admin@murafiq.com',
++      password: 'password',
++    },
+   }),
+   methods: {
+     sendOTP: async function(){

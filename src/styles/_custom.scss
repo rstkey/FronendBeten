@@ -1,0 +1,13 @@
+// Here you can add other styles
+.roles-select-label {
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+}
+// Remove the default text on hover for icons
+// This will let us define the title on parent element
+// https://stackoverflow.com/a/63874002/5581565
+ion-icon {
+  pointer-events: none;
+  font-size: 20px;
+}
