@@ -151,16 +151,16 @@ const routes = [
         name: 'Types',
         component: () => import('@/views/panel/Meal/Types/Types'),
       },
-      {
-        path: '/meals/types/create',
-        name: 'Create type',
-        component: () => import('@/views/panel/Meal/Types/CreateType'),
-      },
-      {
-        path: '/meals/:id',
-        name: 'Edit Meal Type',
-        component: () => import('@/views/panel/Meal/Types/UpdateType'),
-      },
+      // {
+      //   path: '/meals/types/create',
+      //   name: 'Create type',
+      //   component: () => import('@/views/panel/Meal/Types/CreateType'),
+      // },
+      // {
+      //   path: '/meals/:id',
+      //   name: 'Edit Meal Type',
+      //   component: () => import('@/views/panel/Meal/Types/UpdateType'),
+      // },
 
       // Meals Menu ends here
 
