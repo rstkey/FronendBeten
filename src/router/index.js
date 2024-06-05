@@ -163,7 +163,6 @@ const routes = [
       // },
 
       // Meals Menu ends here
-
       {
         path: '/groups',
         name: 'Groups',
